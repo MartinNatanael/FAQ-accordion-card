@@ -25,6 +25,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 .main-container {
@@ -32,11 +33,15 @@ body {
   flex-direction: row;
   width: 100rem;
   height: 30rem;
-  background-image: url(../images/bg-pattern-desktop.svg);
   background-color: var(--light-grayish-blue);
 }
-.main-container .main-image-container .image-woman {
+.main-container .main-image-container {
   position: relative;
+  width: 50%;
+  background-image: url(../images/bg-pattern-desktop.svg);
+}
+.main-container .main-image-container .image-woman {
+  position: absolute;
 }
 .main-container .main-image-container .image-box {
   position: absolute;
