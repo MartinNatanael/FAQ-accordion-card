@@ -1,68 +1,50 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
-    font-family: 'Outfit', sans-serif;
-    font-size: 12px;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-size: 12px;
+  box-sizing: border-box;
 }
 
-:root{
-// fonts weights
---font-weight-normal:400;
---font-weight-bold:700;
-// end font-weight
-
-// bg grandients colors
---soft-violet:hsl(273, 75%, 66%);
---soft-blue: hsl(240, 73%, 65%);
-// end bg gradients
-
-// primary text colors
---dark-desaturated-blue:hsl(238, 29%, 16%);
---soft-red:hsl(14, 88%, 65%);
-//end primary text colors
-
-// secondary text colors
---Very-dark-grayish-blue:hsl(237, 12%, 33%);
---dark-grayish-blue:hsl(240, 6%, 50%);
-// end secondary text colors
-
-// dividers
---light-grayish-blue:hsl(240, 5%, 91%);
-// end dividers
+:root {
+  --font-weight-normal:400;
+  --font-weight-bold:700;
+  --soft-violet:hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  --dark-desaturated-blue:hsl(238, 29%, 16%);
+  --soft-red:hsl(14, 88%, 65%);
+  --Very-dark-grayish-blue:hsl(237, 12%, 33%);
+  --dark-grayish-blue:hsl(240, 6%, 50%);
+  --light-grayish-blue:hsl(240, 5%, 91%);
 }
 
-body{
-    background:linear-gradient(var(--soft-violet),var(--soft-blue));
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: 100vh
+body {
+  background: linear-gradient(var(--soft-violet), var(--soft-blue));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.main-container{
-    display: flex;
-    flex-direction: row;
-    width: 100rem;
-    height: 30rem;
-    background-color: var(--light-grayish-blue);
- 
-    
-    .main-image-container{
-        position: relative;
-        width: 50%;
-        background-image: url(../images/bg-pattern-desktop.svg);
-        .image-woman{
-            position: absolute;
-        }
-        .image-box{
-            position: absolute;
-            top:11rem;
-            bottom:1rem;
-            left:-4.5rem;
-            z-index: 2;
-        }
-    }
+.main-container {
+  display: flex;
+  flex-direction: row;
+  width: 920px;
+  height: 510px;
+  padding: 10rem 0rem;
+  background-color: var(--light-grayish-blue);
+  border-radius: 1.5rem;
+  background-image: url(/images/bg-pattern-desktop.svg);
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-size: contain;
+  .img-container{
+    flex-basis: 50%;
+    height: 100%;
+ }
+.accordion{
+    flex-basis: 50%;
+}
 }
